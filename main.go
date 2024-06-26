@@ -13,6 +13,7 @@ func seedAccount(store Storage, fname, lname, pw string) *Account {
 	}
 
 	if err := store.CreateAccount(acc); err != nil {
+		log.Println("WUT")
 		log.Fatal(err)
 	}
 
@@ -21,7 +22,7 @@ func seedAccount(store Storage, fname, lname, pw string) *Account {
 }
 
 func seedAccounts(s Storage) {
-	seedAccount(s, "Jakub", "Gs", "hunter88")
+	seedAccount(s, "Jakub", "Gs", "hunter8888")
 }
 
 func main() {
